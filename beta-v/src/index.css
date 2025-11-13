@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+}
+
+/* navbar anmation drodown */
+.mobile-menu {
+  background-color: #065f46;
+  color: white;
+  padding: 0 2rem;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-top: 1px solid #047857;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu.open {
+  padding: 1.5rem 2rem;
+  max-height: 400px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+:root {
+  --primary-color: #004aad;     /* Deep Blue (Main brand color) */
+  --secondary-color: #fdbb2d;   /* Yellow (Accent color) */
+  --accent-color: #00bfa6;      /* Optional soft teal for hover/light details */
+  --text-light: #ffffff;        /* White text */
+  --text-dark: #1e293b;         /* Slate dark text */
+  --bg-light: #f8fafc;          /* Page background */
+  --nav-bg: var(--primary-color);
+  --nav-hover: var(--secondary-color);
+}
+
+
+
